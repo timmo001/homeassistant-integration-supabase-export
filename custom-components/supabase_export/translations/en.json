@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API Key",
+                    "url": "URL"
+                },
+                "description": "Please provide the Project URL and `anon` `public` API key for your Supabase project. These can be found in the project settings under the API section."
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "entities": "Entities",
+                    "update_interval": "Update Interval (seconds)"
+                },
+                "title": "Configure Supabase Export"
+            }
+        }
+    }
+}

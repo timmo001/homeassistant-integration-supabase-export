@@ -1,0 +1,13 @@
+{
+  "domain": "supabase_export",
+  "name": "Supabase Export",
+  "codeowners": ["@timmo001"],
+  "config_flow": true,
+  "documentation": "https://github.com/timmo001/homeassistant-integrations",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/timmo001/homeassistant-integrations/issues",
+  "quality_scale": "silver",
+  "requirements": ["supabase==1.0.0"],
+  "version": "1.0.0"
+}
