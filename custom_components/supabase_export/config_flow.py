@@ -30,25 +30,6 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
 )
 
 
-# SQL to create the tables:
-#
-# create table homeassistant_entities (
-#   id bigint not null primary key,
-#   created_at timestamp default now(),
-#   entity_id text not null,
-#   state text,
-#   attributes json,
-#   last_changed timestamp default now()
-# );
-#
-# create table homeassistant_metadata (
-#   id bigint not null primary key,
-#   created_at timestamp default now(),
-#   provisioned boolean,
-#   data json
-# );
-
-
 async def validate_input(data: dict[str, str]) -> dict[str, Any]:
     """Validate the user input allows us to connect to Supabase.
 
