@@ -8,6 +8,6 @@ TODO
 
 ## Integrations
 
-### [Supabase Export](custom-components/supabase_export)
+### [Supabase Export](custom_components/supabase_export)
 
 Export data from Home Assistant to a Supabase database
