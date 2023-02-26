@@ -9,7 +9,7 @@ Please follow the instructions in the main [README](../../README.md#Installation
 ## Setup
 
 1. Create a Supabase project and database.
-2. Run the following SQL query to create the required tables:
+1. Run the following SQL query to create the required tables:
 
 ```sql
 create table homeassistant_entities (
