@@ -17,6 +17,8 @@ jobs:
         shell: bash
         run: |
           version="${{ github.event.release.tag_name }}"
+          version="${version,,}"
+          version="${version#v}"
           yq e -P -o=json \
             -i ".version = \"${version}\"" \
             "${{ github.workspace }}/custom_components/supabase_export/manifest.json"
@@ -25,7 +27,8 @@ jobs:
         run: |
           cd "${{ github.workspace }}/custom_components/supabase_export"
           zip supabase_export.zip -r ./
-      - name: "⬆️ Upload zip to release"
-        uses: softprops/action-gh-release@v0.1.15
-        with:
-          files: ${{ github.workspace }}/custom_components/supabase_export/supabase_export.zip
+      - name: "⬆ Upload zip to release"
+        uses: fnkr/github-action-ghr@v1
+        env:
+          GHR_PATH: ${{ github.workspace }}/custom_components/supabase_export/supabase_export.zip
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
