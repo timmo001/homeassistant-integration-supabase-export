@@ -4,7 +4,9 @@ This integration allows you to export data from Home Assistant to a Supabase dat
 
 ## Installation
 
-I am working on adding this to the HACS store, but for now, you can download the latest release from the [releases](https://github.com/timmo001/homeassistant-integration-supabase-export/releases) page and copy the `supabase_export` folder into your `custom_components` folder.
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=timmo001&repository=homeassistant-integration-supabase-export&category=integration)
+
+This integration is available in the [Home Assistant Community Store](https://hacs.xyz/).
 
 ## Setup
 
